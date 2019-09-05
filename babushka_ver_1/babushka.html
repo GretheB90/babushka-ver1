@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Bistro Babushka</title>
+</head>
+
+<body>
+	<header>
+		<h1>Bistro Babushka</h1>
+	</header>
+	<nav>
+		<button class="filter valgt" data-mat="alle">Alle</button>
+		<button class="filter" data-mat="foretter">Forretter</button>
+		<button class="filter" data-mat="hovedretter">Hovedretter</button>
+		<button class="filter" data-mat="desserter">Desserter</button>
+		<button class="filter" data-mat="drikkevarer">Drikkevarer</button>
+	</nav>
+	<div id="container">
+		<h2>Menu</h2>
+
+		<section id="detalje">
+			<!-- Dette er pop-up skjermen -->
+			<article class="innhold">
+				<button class="lukk">X</button>
+				<img class="bilde" src="" alt="">
+				<p class="navn"></p>
+				<p class="kort"></p>
+				<p class="pris"></p>
+			</article>
+		</section>
+		<template>
+			<article id="innhold">
+				<p class="kategori"></p>
+				<h3 class="navn"></h3>
+				<img class="bilde" src="" alt="">
+				<p class="kort"></p>
+				<p class="pris"></p>
+			</article>
+		</template>
+	</div>
+	<section id="liste"></section>
+	<script src="script.js"></script>
+	<footer>Adresse: Grønngade 97 1234 Køvenhavn K<br> Åbningstider: Mandag - Fredag 10:30 - 22:00 Lørdag 12:00 - 23:00</footer>
+</body></html>

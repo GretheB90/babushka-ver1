@@ -1,0 +1,185 @@
+/* views in 376x650 */
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f7f5f5;
+}
+
+header {
+	background-color: orange;
+	color: red;
+	height: auto;
+	text-align: center;
+	padding: 2vw;
+}
+
+h1 {
+	font-size: 2.5em;
+	font-family: sans-serif;
+}
+
+h2 {
+	font-size: 1.5em;
+	text-align: center;
+	font-family: sans-serif;
+	padding-top: 0.4em;
+}
+
+nav {
+	text-align: center;
+	padding-top: 1vw;
+}
+
+nav .filter {
+	border-radius: 4vw;
+	font-size: 0.8em;
+	display: inline-block;
+	cursor: pointer;
+	font-family: sans-serif;
+}
+
+nav .filter:focus {
+	background-color: lightcoral;
+	color: white;
+}
+
+#liste {
+	display: grid;
+	grid-column-gap: 2vw;
+	grid-row-gap: 2vw;
+}
+
+.kort {
+	text-align: center;
+	font-family: sans-serif;
+}
+
+.navn {
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+.pris {
+	font-size: 1em;
+	font-family: sans-serif;
+	text-decoration: underline;
+}
+
+img {
+	height: auto;
+	width: 100%;
+}
+
+#container {
+	text-align: center;
+
+}
+
+article {
+	text-align: center;
+	margin: 0 auto;
+	width: 80vw;
+	padding: 1vw;
+	border: solid 1px #e3e3e3;
+}
+
+article:nth-child(2n+1) {
+	background-color: #e3e3e3;
+}
+
+
+/* Dette er pop-up skjermen */
+#detalje {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: #e3e3e3;
+	display: none;
+}
+
+#detalje .article {
+	width: 60vw;
+	min-height: 50vh;
+	margin: 4rem auto;
+	padding: 4rem;
+	background: white;
+}
+
+#detalje img {
+	padding-top: 3em;
+	text-align: center;
+	height: auto;
+	width: 100%;
+}
+
+/* dette er for å lukke pop-up*/
+#detalje .lukk {
+	position: fixed;
+	top: 0;
+	right: 0;
+	font-size: 2rem;
+}
+
+
+footer {
+	background-color: grey;
+	text-align: center;
+	font-size: 0.7em;
+	padding: 4vw;
+	color: #ffff;
+	font-family: sans-serif;
+	margin-top: 7vw;
+}
+
+/* OPP MOT PC SKJERM STØRRELSE */
+
+@media screen and (min-width:800px) {
+
+	#liste {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	article {
+		display: flex;
+		flex-direction: column;
+		width: auto;
+		height: auto;
+	}
+
+	img {
+		display: flex;
+		margin-left: 5em;
+		width: 100%;
+		height: auto;
+		margin: 0;
+	}
+
+	#detalje img {
+		padding-top: 3em;
+		text-align: center;
+		height: auto;
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	footer {
+		padding: 2vh;
+	}
+}
+
+@media screen and (min-width:1000px) {
+
+	#liste {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+article {}
+
+
+}
